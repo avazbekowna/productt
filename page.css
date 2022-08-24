@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+#header{
+    background:#240040;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 15px 0;
+    animation: ani 1s alternate;
+}
+@keyframes ani {
+    0% {
+        transform: translateX(-1400px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+}
+.header-nav select{
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 0 40px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+}
+.header-nav select option{
+    background: transparent;
+    color: black;
+}
+.header-nav a{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    padding: 0 20px;
+}
+
+.school-txt h1{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    color: #252B42;
+    text-align: center;
+    padding-top: 30px;
+
+}
+.school-block h1{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+     color: #252B42;
+    padding-left: 45px;
+    margin-top: 50px;
+}
+.school-block p{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #252B42;
+    padding: 7px;
+    padding-left: 58px;
+}
+.school-block div h3{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+    padding: 58px;
+}
+.school-btr{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.school-p h1{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #000000;
+    padding-bottom: 89px;
+}
+#inspect{
+    padding: 89px;
+}
+.inspect{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.inspect-block h1{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #252B42;
+    padding-left: 45px;
+    margin-top: 50px;
+}
+.inspect-block p{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #252B42;
+    padding: 7px;
+    padding-left: 58px;
+}
+.inspect-block div h3{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+    padding: 40px;
+}
+.ibspect-p{
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot-4 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: -230px;
+}
+.foot-3 {
+    margin-top: 10px;
+    margin-right: -120px;
+}
+
+.foot-3 h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.foot-3 img {
+    width: 39px;
+    height: 30px;
+    left: 1266px;
+    top: 4160px;
+}
+
+.foot-3 {
+    display: flex;
+}
+
+
+#hero{
+    background: black;
+min-height: 100vh;
+}
+.hero-tabs img{
+    width: 300px;
+    height: 330px;
+    margin-top: 100px;
+    animation: im 1.5s alternate;
+}
+.hero-tabs input{
+    display: none;
+}
+
+@keyframes im {
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+#html:checked~.css,
+#html:checked~.js{
+    display: none;
+}
+#css:checked~.html,
+#css:checked~.js{
+    display: none;
+}
+#js:checked~.css,
+#js:checked~.html{
+    display: none;
+}
+.hero-label{
+    padding-top: 50px;
+    animation: an 1s alternate;
+}
+@keyframes an {
+    0%{
+        transform:translateX(-1000px) ;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.hero-label label{
+    padding: 10px 30px;
+    background: linear-gradient(20deg,red,green);
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    transition: .4s;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px;
+}
+.hero-label label:hover{
+    background: linear-gradient( 20deg,blue,red);
+    color: yellow;
+}
